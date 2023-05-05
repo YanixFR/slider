@@ -1,0 +1,234 @@
+
+@font-face {
+    font-family: Nunito Sans;
+    src: url(./fonts/NunitoSans-Italic.ttf);
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  body {
+    font-family: "Nunito Sans", "Arial", "Helvetica", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Yeseva One", "Arial", "Helvetica", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .container {
+    max-width: 1236px;
+    margin: 0 auto;
+  }
+  
+  /* projects */
+  
+  .projects {
+    padding-bottom: 409px;
+    background: #131313;
+  }
+  .projects-wrapper {
+    padding-top: 107px;
+    padding-left: 32px;
+  
+    display: -webkit-box;
+  
+    display: -ms-flexbox;
+  
+    display: flex;
+  }
+  .projects-content {
+    max-width: 422px;
+  }
+  .projects__subtitle {
+    padding-top: 69px;
+  
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+  
+    color: #e3b873;
+  }
+  .projects__text {
+    font-size: 14px;
+    line-height: 27px;
+  
+    padding-top: 34px;
+  }
+  .projects-description {
+    display: -ms-grid;
+    display: grid;
+  
+    -ms-grid-columns: 1fr 34px 1fr;
+  
+    grid-template-columns: repeat(2, 1fr);
+  
+    -ms-grid-rows: auto;
+  
+    grid-template-rows: auto;
+  
+    padding-top: 42px;
+    grid-gap: 34px;
+  }
+  .projects-description > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .projects-description > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .projects-description > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .projects-description > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .projects-description > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .projects-description > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .projects-description__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+  
+    color: #e3b873;
+  }
+  .projects-description__text {
+    font-size: 13px;
+    line-height: 21px;
+  
+    padding-top: 9px;
+  
+    position: absolute;
+    opacity: 0;
+  }
+  .projects-description__text.active {
+    position: relative;
+    opacity: 1;
+  }
+  .projects-description__icon {
+    padding-top: 47px;
+  
+    display: -webkit-box;
+  
+    display: -ms-flexbox;
+  
+    display: flex;
+  }
+  .projects__arrow {
+    max-width: 40px;
+    color: #fff;
+  
+    cursor: pointer;
+  }
+  .back-arrow {
+    margin-right: 29.5px;
+  }
+  .forward-arrow {
+    margin-left: 29.5px;
+  }
+  .projects__dot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .dot-item {
+    margin: 0 18px;
+  
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .dot-item.active {
+    background: #ffffff;
+  
+    -webkit-transition: 0.2s;
+  
+    -o-transition: 0.2s;
+  
+    transition: 0.2s;
+  }
+  
+  .dot:first-child {
+    margin-left: 0;
+  }
+  
+  .projects-photo {
+    margin-left: 70px;
+  }
+  
+  .projects__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .projects__list__item {
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+  
+    color: rgba(255, 255, 255, 0.3);
+  
+    margin-right: 61px;
+  }
+  .projects__list__item.active {
+    color: #e3b873;
+  
+    -webkit-transition: 0.2s;
+  
+    -o-transition: 0.2s;
+  
+    transition: 0.2s;
+  }
+  .projects__list__item.active::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #e3b873;
+    margin-top: 4px;
+  }
+  .projects-photo__slaider {
+    margin-top: 53px;
+    
+    position: relative;
+  }
+  
+  .projects-photo__img {
+    max-height: 458px;
+    position: absolute;
+  
+    -webkit-transition: 0.2s;
+  
+    -o-transition: 0.2s;
+  
+    transition: 0.2s;
+    visibility: hidden;
+  }
+  .projects-photo__img.active {
+    visibility: visible;
+  }
